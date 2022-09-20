@@ -7,8 +7,7 @@ agent any
   stages{
     stage('GetCode'){
       steps{
-        git branch: 'main'
-        url: 'https://github.com/Shivamgupta18/maven-web-app.git' 
+        git 'https://github.com/Shivamgupta18/maven-web-app.git' 
       }
     }
     stage('Build'){
